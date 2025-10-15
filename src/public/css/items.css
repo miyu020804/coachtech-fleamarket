@@ -1,0 +1,159 @@
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    display: block;
+    padding: 12px;
+    border:1px solid #eee;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    text-align: center;
+}
+
+.thumb{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #f3f3f3;
+    display: block;
+    margin: 0 auto;
+}
+
+.name{
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+:root{ --container-pad: 16px; }
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.tabs{
+    display:flex;
+    gap: 24px;
+    align-items: center;
+    margin:20px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.tabs::after{
+    content: none;
+}
+
+.tabs-border{
+    border-bottom: 2px solid #000;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+html, body { overflow-x: hidden; }
+
+.tab.active{ color:#e60033; }
+
+.pager{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 24px 0;
+    font-size: 14px;
+}
+
+.pager-button{
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.pager-button:hover{
+    background: #f5f5f5;
+}
+
+.pager-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.item-container{
+    max-width: 720px;
+    margin: 24px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+#cat-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+    justify-content: flex-start;
+}
+
+
+
+.error {
+    color: #d33;
+    margin-top: 4px;
+    font-size: .9rem;
+}
+
+
+
+.can-button {
+    display: inline-block;
+    padding: .35rem .7rem;
+    border: 1px solid #e44;
+    border-radius: 999px;
+    background: #fff;
+    color: #e44;
+    cursor: pointer;
+    font-size: 0.95rem;
+    flex: none;
+}
+
+.can-button.is-active {
+    background: #e44;
+    color: #fff;
+}
+
+.button-sell-submit {
+    display: inline-block;
+    width: 100%;
+    padding: .8rem 1rem;
+    background: #d14;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%,
+    padding: .6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}

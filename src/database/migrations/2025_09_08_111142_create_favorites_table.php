@@ -1,0 +1,43 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateFavoritesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up(): void
+    {
+        Schema::create('favorites', function (Blueprint $table) {
+            $table->id(); // PK
+
+            // 外部キー
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('item_id');
+            // タイムスタンプ
+            $table->timestamps();
+            // 外部キー制約
+            $table->foreign('user_id')
+                ->references('id')->on('users')
+                ->cascadeOnUpdate()->restrictOnDelete();
+            $table->foreign('item_id')
+                ->references('id')->on('items')
+                ->cascadeOnUpdate()->restrictOnDelete();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('favorites');
+    }
+}

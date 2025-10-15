@@ -1,0 +1,155 @@
+.login-page {
+    background: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+.login-page .login-card{
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 16px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    display: block;
+}
+
+.login-page .brand-aside{
+    position: relative;
+    background: linear-gradient(180deg,#ff4b2b
+    0%,#ff2d1a 100%);
+    display: grid;
+    place-items: center;
+}
+
+.login-page .brand-aside,
+.login-page .brand-bar {
+    display: none;
+}
+
+
+
+.login-page .brand-bar{
+    width: 56px;
+    height: 76%;
+    background: rgba(255,255,255,.12);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+}
+
+.login-page .brand-logo{
+    max-height: 420px;
+    height:80%;
+    object-fit: contain;
+}
+
+.login-page .form-pane{
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.login-page .form-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 32px 0;
+}
+
+.login-page .form-label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+
+.login-page .form-group{
+    max-width: 640px;
+    margin: 0 auto 18px;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+.login-page .form-input{
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.login-page .form-input:focus{
+    border-color: #111827;
+    box-shadow: 0 0 0 3px rgba(17,24,39,.1);
+}
+
+
+.error-text{
+    margin-top: 6px;
+    font-size: 13px;
+    color: #dc2626;
+}
+
+.login-page .submit-button{
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    margin: 16px auto 0;
+    border-radius: 8px;
+    background: #e60033;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-page .submit-button:hover{ opacity: .92; }
+
+/* 会員登録リンク*/
+.login-page .register-link {
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-page .register-link a{
+    color:#3b82f6;
+    text-decoration: none;
+}
+
+.login-page .register-link
+a:visited{color: #3b82f6;}
+
+
+/* タブレット 768~850px */
+@media (min-width:768px) and
+(max-width:850px){
+    .login-page .login-card{
+        grid-template-columns: 220px 1fr;
+        max-width: 820px;
+    }
+
+.login-page .form-pane{ padding: 40px; }
+    .login-page .brand-bar{ width: 48px; }
+}
+
+/* PC 1400~1540px */
+@media (min-width:1400px) and
+(max-width:1540px){
+    .login-page .login-card{
+    max-width: 960px;
+    grid-template-columns: 260px 1fr;
+}
+}

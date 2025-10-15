@@ -1,0 +1,59 @@
+.verify-page{
+    max-width: 600px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0 0 16px;
+}
+
+.lead{
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+    margin: 0 0 28px;
+}
+
+.sent{
+    margin: 0 0 16px;
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.button-resend{
+    min-width: 280px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-resend:hover{ background: #eee; }
+
+.direct-verify {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.link-resend{
+    display: inline;
+    padding: 0;
+    background: none;
+    border: 0;
+    color: #3baafc;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-resend:hover {
+    background: none;
+}
