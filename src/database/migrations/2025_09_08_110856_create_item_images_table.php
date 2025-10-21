@@ -20,7 +20,6 @@ class CreateItemImagesTable extends Migration
             $table->unsignedBigInteger('item_id');
             // 本体カラム
             $table->string('path', 255); // NOT NULL
-            $table->tinyIncrements('sort_order'); // NOT NULL
             // タイムスタンプ
             $table->timestamp('created_at')->nullable(false);
             $table->timestamp('updated_at')->nullable(false);

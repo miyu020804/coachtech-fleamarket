@@ -14,14 +14,14 @@ class FixItemImagesColumns extends Migration
     public function up(): void
     {
         Schema::table('item_images', function (Blueprint $table) {
-            $table->unsignedBigInteger('item_id')->after('id');
-            $table->string('path', 255)->after('item_id');
+            //$table->unsignedBigInteger('item_id')->after('id');
+            //$table->string('path', 255)->after('item_id');
             $table->tinyInteger('sort_order')->after('path');
             // 外部キー
-            $table->foreign('item_id')
-                ->references('id')->on('items')
-                ->cascadeOnUpdate()
-                ->cascadeOnDelete();
+            //$table->foreign('item_id')
+            //->references('id')->on('items')
+            //->cascadeOnUpdate()
+            //->cascadeOnDelete();
         });
     }
 

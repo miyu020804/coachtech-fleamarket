@@ -25,12 +25,13 @@ class CreateOrdersTable extends Migration
             $table->integer('price');
             $table->enum('status', ['pending', 'completed']);
             $table->timestamp('paid_at')->nullable();
-            $table->timestamp('shipped_at')->nullable(false);
-            $table->timestamp('received_at')->nullable(false);
+            $table->timestamp('shipped_at')->nullable();
+            $table->timestamp('received_at')->nullable();
 
             // タイムスタンプ
-            $table->timestamp('created_at')->nullable(false);
-            $table->timestamp('updated_at')->nullable(false);
+            //$table->timestamp('created_at')->nullable(false);
+            //$table->timestamp('updated_at')->nullable(false);
+            $table->timestamps();
 
             // 外部キー制約
             $table->foreign('buyer_id')

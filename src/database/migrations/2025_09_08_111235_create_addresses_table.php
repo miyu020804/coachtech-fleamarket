@@ -24,7 +24,7 @@ class CreateAddressesTable extends Migration
             $table->string('city', 150);
             $table->string('address_line1', 255);
             $table->string('address_line2', 255)->nullable();
-            $table->string('phone', 20)->nullable()->after('address_line2');
+            $table->string('phone', 20)->nullable();
             // タイムスタンプ
             $table->timestamp('created_at')->nullable(false);
             $table->timestamp('updated_at')->nullable(false);
